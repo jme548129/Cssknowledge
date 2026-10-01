@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CSS Knowledge Hub</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="logo" data-go="home">&lt;/&gt; CSS <b>Knowledge Hub</b></div><button id="burger" aria-label="Menu">☰</button><nav id="nav"></nav><button class="mode" id="mode" title="Theme">◐</button></header>
+<main>
+<section id="home"><div class="hero"><div><h1>Learn <span>CSS</span> Easily</h1><p>CSS turns plain HTML into beautiful, responsive websites. Learn it step by step with live examples, a playground and a quiz.</p><button class="btn" data-go="basics">Start Learning →</button></div>
+<pre class="code" id="heroCode"></pre></div><div class="grid" id="homeCards"></div></section>
+
+<section id="about"><h2>About CSS</h2><div class="grid">
+<div class="card"><h3>What is CSS?</h3>CSS is the language that controls how HTML looks: colors, fonts, spacing and layout.</div>
+<div class="card"><h3>What does it stand for?</h3><b>C</b>ascading <b>S</b>tyle <b>S</b>heets. "Cascading" means rules flow down and later or more specific rules win.</div>
+<div class="card"><h3>Why is it important?</h3>It separates content (HTML) from design, so one stylesheet can restyle a whole site.</div>
+<div class="card"><h3>How it works with HTML</h3>HTML builds the structure. CSS selects elements and applies styles to them.</div>
+<div class="card"><h3>Advantages</h3>Reusable, faster to maintain, consistent design, responsive on any screen.</div>
+<div class="card"><h3>Real-world uses</h3>Every website, web app, email template and even many mobile apps use CSS.</div></div>
+<h3>Simple example</h3><div class="two"><div><div class="tag">HTML</div><pre class="code" id="abH"></pre><div class="tag">CSS</div><pre class="code" id="abC"></pre></div>
+<div class="card"><div class="tag">Result</div><div class="prev" id="abP"></div><p><b>h1</b> picks every heading. <b>color: blue</b> makes text blue. <b>font-size: 32px</b> makes it bigger. Each rule ends with a semicolon.</p></div></div></section>
+
+<section id="basics"><h2>CSS Basics</h2><div class="grid" id="lessons"></div></section>
+<section id="selectors"><h2>CSS Selectors</h2><div class="grid" id="selGrid"></div></section>
+<section id="properties"><h2>CSS Properties</h2><p>Edit a value and watch the preview change.</p><div class="grid" id="propGrid"></div></section>
+
+<section id="layout"><h2>CSS Layout</h2><div class="grid" id="layGrid"></div></section>
+
+<section id="responsive"><h2>Responsive Design</h2><div class="grid">
+<div class="card"><h3>What it means</h3>A responsive page adapts to phones, tablets and desktops.</div>
+<div class="card"><h3>Media queries</h3>Apply styles only when a condition, like screen width, is true.</div>
+<div class="card"><h3>Mobile-first</h3>Write styles for small screens first, then add <code>min-width</code> queries for larger ones.</div>
+<div class="card"><h3>Desktop vs mobile</h3>Desktop: multi-column grids. Mobile: one stacked column with bigger tap targets.</div></div>
+<pre class="code" id="respCode"></pre><div class="card"><label>Screen width: <b id="rw">700</b>px</label><input type="range" id="rr" min="280" max="900" value="700" style="width:100%"><iframe id="rf" style="max-width:100%"></iframe></div></section>
+
+<section id="examples"><h2>CSS Examples</h2><div id="exList"></div></section>
+
+<section id="playground"><h2>Interactive CSS Playground</h2><div class="two"><div><label>HTML</label><textarea id="pH"></textarea></div><div><label>CSS</label><textarea id="pC"></textarea></div></div>
+<div class="row" style="margin:10px 0"><button class="btn" id="run">▶ Run</button><button class="btn s" id="reset">Reset</button></div><iframe id="pF"></iframe></section>
+
+<section id="quiz"><h2>CSS Quiz</h2><div class="card" id="qbox"></div></section>
+
+<section id="admin"><h2>Admin Dashboard</h2><div id="adminNote" class="note"></div><div id="adminBody"></div></section>
+</main>
+<footer><h3 style="margin:0">CSS Knowledge Hub</h3><p><i>“Learn CSS. Build Better Websites.”</i></p>
+<p><a data-go="about">About</a><a href="#" onclick="alert('Contact: hello@cssknowledgehub.example');return false">Contact</a><a href="#" onclick="window.open('https://developer.mozilla.org/docs/Web/CSS','_blank');return false">Learning Resources</a></p><p>Copyright © 2026 CSS Knowledge Hub</p></footer>
+<script src="app.js"></script></body></html>
